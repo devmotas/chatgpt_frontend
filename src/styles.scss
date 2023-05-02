@@ -1,1 +1,37 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+
 /* You can add global styles to this file, and also import other style files */
+$primary-color: #ff6082;
+$secondary-color: #0080ff;
+$text-color: #1D1E22;
+$font-family: 'Arial', sans-serif;
+$background: #F4F4F4;
+$hover-background: #C0C0C0;
+
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+app-login,
+app-root {
+  height: 100%;
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}

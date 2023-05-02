@@ -1,0 +1,102 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3f51b5;
+  color: #fff;
+  height: 80px;
+  padding: 0 20px;
+}
+
+.header-logo {
+  flex-grow: 1;
+}
+
+.header-logo img {
+  height: 60px;
+}
+
+.header-logout {
+  flex-basis: 120px;
+}
+
+.logout-btn {
+  background-color: #fff;
+  color: #3f51b5;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background-color: #eee;
+  color: #3f51b5;
+}
+
+
+.home {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border: 2px solid #3f51b5;
+
+  th,
+  td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+    cursor: default;
+  }
+
+  th {
+    background-color: #f2f2f2;
+    text-align: left;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    cursor: default;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  tr:hover {
+    background-color: #ddd;
+    cursor: pointer;
+  }
+
+
+  .config-btn {
+    background-color: lightsteelblue;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+}
+
+.add-user-btn {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  padding-bottom: 20px;
+
+  button {
+    background-color: #777474;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}

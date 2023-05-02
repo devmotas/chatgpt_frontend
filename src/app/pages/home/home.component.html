@@ -1,0 +1,47 @@
+<div class="header">
+  <div class="header-logo">
+    <img src="logo.png" alt="Logo">
+  </div>
+  <div class="header-logout">
+    <button class="logout-btn" (click)="logout()">Logout</button>
+  </div>
+</div>
+<div class="home">
+  <h2>Tabela de Usuários</h2>
+  <div class="add-user-btn">
+    <button (click)="addUser()">Adicionar</button>
+  </div>
+  <table class="user-table" id="user-table">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Nome</th>
+        <th>E-mail</th>
+        <th>Autorização</th>
+        <th>Criado em</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td>{{ user.id }}</td>
+        <td>{{ user.name }}</td>
+        <td>{{ user.email }}</td>
+        <td>{{ user.authorization === 1 ? 'Permitido': 'Negado' }} </td>
+        <td>{{ user.created_time | date:'dd/MM/yyyy HH:mm:ss' }}</td>
+        <td>
+          <button class="config-btn" (click)="editUser(user)">
+            ✍️
+          </button>
+          <button class="config-btn" (click)="showDetails(user)">
+            👀
+          </button>
+          <button class="config-btn">
+            🗑️
+          </button>
+        </td>
+      </tr>
+    </tbody>
+
+  </table>
+</div>
